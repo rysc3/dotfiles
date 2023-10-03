@@ -117,8 +117,23 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# My custom things:
 
+git_branch() {
+ 	local branch=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+ 	if [ -n "$branch" ]; then
+   	echo "[$branch]"
+ 	fi
+}
+
+function bash_prompt() {
+ 	local git_branch=$(git_branch)
+ 	PS1='${debian_chroot:+($debian_chroot)}${blu}${git_branch}${pur} \W${grn} \$ ${clr}'
+}	
+
+export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[1;37m\][\[\033[1;37m\]ser\[\033[1;37m\]]:\[\033[01;34m\]\w\[\033[00m\] \$(git_branch)\$ "
+
+
+# My custom things:
   # aliases 
 
   alias c='clear'
@@ -126,20 +141,6 @@ fi
 	alias dcu='docker compose up'
 	alias dcd='docker compose down --remove-orphans'
 	
-	git_branch() {
-  	local branch=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
-  	if [ -n "$branch" ]; then
-    	echo "[$branch]"
-  	fi
-	}
-
-	function bash_prompt() {
-  	local git_branch=$(git_branch)
-  	PS1='${debian_chroot:+($debian_chroot)}${blu}${git_branch}${pur} \W${grn} \$ ${clr}'
-	}	
-
-	export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[1;37m\][\[\033[1;37m\]ser\[\033[1;37m\]]:\[\033[01;34m\]\w\[\033[00m\] \$(git_branch)\$ "
-
 	# tmux things 
 	alias tml='tmux ls'
 	alias tma='tmux attach -t'
@@ -157,3 +158,4 @@ fi
 			git branch -M main
 		fi 
   }; git_init'
+	alias gitp='git push --set-upstream origin main'
