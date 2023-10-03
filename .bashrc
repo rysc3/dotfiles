@@ -140,6 +140,7 @@ export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
   alias dc='docker compose'
 	alias dcu='docker compose up'
 	alias dcd='docker compose down --remove-orphans'
+	alias ll='ls -lrt'
 	
 	# tmux things 
 	alias tml='tmux ls'
@@ -159,3 +160,6 @@ export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
 		fi 
   }; git_init'
 	alias gitp='git push --set-upstream origin main'
+
+	# aliases for CARC hpc
+	alias jobs='watch squeue --me'
