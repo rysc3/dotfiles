@@ -1,0 +1,252 @@
+[Misc]
+PasswordsInRegistry=0
+SkinSat=75
+SkinName3=Windows dark theme
+LastSession=73.98.92.84 (ryserver)|#109#0%73.98.92.84%22%ryserver%%-1%-1%%%%%0%0%0%_ProfileDir_\.ssh\id_rsa%%-1%0%0%0%%1080%%0%0%1%%0%%%%0%-1%-1%0#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0#0# #-1
+SessionP=68494134026
+RightClickAction=0
+RightClickAssigned=1
+StorePasswords=Never
+DefTextEditor=<MobaTextEditor>
+LogFileFormat=
+StoreSSHKeysPassphrases=0
+BackupIni=1
+LogTerminalActivity=0
+LogType=0
+LocalShell=Bash (32 bit)
+LogFolder=
+DarknessIntensity=75
+XAuto=1
+XKeepAlive=1
+BackspaceSendsBS=1
+BSisBS=0
+BoldAsFont=0
+WinPath=1
+ConfirmExit=1
+Scrollbar=1
+PromptType=2
+TrackTermActivity=1
+WarnBeforePasteMultipleLines=0
+BellType=0
+TransTerm=5
+TransDetachedTabs=5
+X11SharedClipboard2=1
+X11OpenGL=0
+X11DisplayMode=0
+X11AccessControl2=0
+X11DisplayOffset=0
+X11ScreenNumber=1
+X11Keyboard=0
+X11DpiMode=stretched
+X11Version=MobaX
+HomeDir=<Temp directory>
+SlashDir=<Temp directory>
+DefaultHome=<Home (pinned)>
+DefaultNewTab=<Terminal>
+NewTabPosition=1
+ReplaceHomeTab=0
+NoTabClose=0
+AllowMultiInstances=0
+WSLUbuntuAlreadyImported=1
+
+[SSH_Hostkeys]
+sha256-ssh-ed25519@22:hopper.alliance.unm.edu=7a:89:b5:99:2f:57:3e:b6:e5:f8:7f:45:a8:0a:9a:36:e2:5e:48:1f:63:81:58:f1:02:d6:64:8c:6a:35:df:e6
+sha256-ssh-ed25519@22:wheeler.alliance.unm.edu=a2:0d:6d:1c:5f:14:c6:ce:f6:ea:dc:63:37:06:1f:89:16:99:4e:ce:c4:3d:9f:dd:29:c0:7c:f6:3e:3a:52:50
+ssh-ed25519@22:73.98.40.201=0x428584159d98d7a3cfde402b6846a26593d934ae4d0ebe538e0112be45938636,0x662b64a5c5d127c52412c51b047295084bccbeac9b0e2f1592ccbc1d22f6b4be
+sha256-ssh-ed25519@22:73.98.40.201=36:19:b0:d3:48:49:3a:5b:fb:80:f7:46:73:9d:aa:cd:e8:56:9d:bc:c8:7e:bc:33:25:48:40:ad:5e:22:7b:fd
+ssh-ed25519@22:73.98.92.84=0x428584159d98d7a3cfde402b6846a26593d934ae4d0ebe538e0112be45938636,0x662b64a5c5d127c52412c51b047295084bccbeac9b0e2f1592ccbc1d22f6b4be
+sha256-ssh-ed25519@22:73.98.92.84=36:19:b0:d3:48:49:3a:5b:fb:80:f7:46:73:9d:aa:cd:e8:56:9d:bc:c8:7e:bc:33:25:48:40:ad:5e:22:7b:fd
+
+[SSH]
+StrictHostKeyChecking=0
+UseInternalMobAgent=0
+UseExternalPageant=1
+ValidateEachAgentRequest=0
+MobAgentKeys=
+DisplaySSHBanner=1
+UseNewMoTTY=1
+GwUse2factor=0
+AutoStartSSHGUI=1
+SSHKeepAlive2=0
+EnableSFTP=1
+RemoteMonitoring=0
+ScpPreservesDates=0
+UseGSSAPI=1
+KrbDomain=
+GSSAPICustomLib=
+GSSAPILibNumber=0
+DefaultLoginName=
+SFTPShowDotFiles=1
+SFTPAsciiMode=0
+MonitorHost=1
+MonitorCPU=1
+MonitorRAM=1
+MonitorNetUp=1
+MonitorNetDown=1
+MonitorProcesses=0
+MonitoFDs=0
+MonitorUptime=1
+MonitorUsers=1
+MonitorPartitions=1
+MonitorNfsPartitions=0
+MonitorNetstat=0
+
+[Font]
+Font2=MobaFont
+FontIsBold2=0
+FontHeight2=10
+FontCharset2=0
+FontQuality2=3
+Ligatures=0
+Charset2=UTF-8
+LockRowsCols=0
+LockedCols=80
+LockedRows=24
+
+[Colors]
+Black=30,30,30
+BoldBlack=128,128,128
+Red=255,96,96
+BoldRed=255,128,128
+Green=14,177,108
+BoldGreen=24,237,147
+Yellow=190,190,18
+BoldYellow=222,220,18
+Blue=18,150,190
+BoldBlue=27,186,233
+Magenta=255,77,255
+BoldMagenta=255,125,255
+Cyan=84,204,239
+BoldCyan=142,221,244
+White=204,204,204
+BoldWhite=204,204,204
+ForegroundColour=236,236,236
+BackgroundColour=30,30,30
+CursorColour=180,180,192
+SyntaxType=1
+
+[Cursor]
+CursorType=0
+CursorBlinks=0
+
+[Display]
+DisableQuickConnect=0
+CustomDPI_2560_96=0
+IconsTheme=0
+RoundedTabs=1
+GraphicCache=1
+SidebarRight=0
+C10Checked=1
+C11Checked=1
+C12Checked=1
+C13Checked=0
+C14Checked=0
+VisibleTabNum=1
+VisibleTabClose=1
+MenuAndButtons=2
+BtnType2=2
+
+[PopupConsole]
+Transparency=16
+Size=36
+Sizeable=0
+Position=3
+TryToOpenInExplorerFolder=1
+BackgroundInsteadOfClose=0
+
+[X11Extension]
+Composite=1
+DAMAGE=1
+RANDR=1
+XFIXES=1
+XTEST=1
+XINERAMA=1
+
+[HotKeys]
+Execute a macro=<none>
+Start a new tab=<none>
+Close current tab=<none>
+Previous tab=<none>
+Next tab=<none>
+Toggle fullscreen / maximize terminal=<none>
+Start the X server=<none>
+Save terminal output=<none>
+Print terminal output=<none>
+1-terminal mode=<none>
+2-terminals mode (Vertical split)=<none>
+2-terminals mode (Horizontal split)=<none>
+4-terminals mode=<none>
+Start a new remote session=<none>
+Show/hide sidebar=<none>
+Start MobaTextEditor=<none>
+Cycle through tabs=<none>
+Reverse cycle=<none>
+Find in terminal=<none>
+Find next=<none>
+Paste in terminal=<none>
+Quick connect=<none>
+Terminal zoom=<none>
+Terminal unzoom=<none>
+Detach/Reattach tab=<none>
+Duplicate current tab=<none>
+Help and documentation=<none>
+Exit MobaXterm=<none>
+Show MobaXterm / hide to systray=<none>
+Show / hide popup terminal=<none>
+
+[WindowPos_DESKTOP-VUDU6NE_2560_1440_1440_2560_3440_1440_1440_2560]
+CompactMode=0
+MonitorCount=4
+Left=460
+Top=1440
+Width=2440
+Height=1407
+Maximized=0
+SidebarVisible=0
+SidebarWidth=240
+
+[Bookmarks]
+SubRep=
+ImgNum=42
+73.98.92.84 (ryserver)=#109#0%73.98.92.84%22%ryserver%%-1%-1%%%%%0%0%0%_ProfileDir_\.ssh\id_rsa%%-1%0%0%0%%1080%%0%0%1%%0%%%%0%-1%-1%0#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0#0# #-1
+Bash=#204#10%0__PIPE__Bash%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0#0# #-1
+WSL-Ubuntu=#105#14%1%
+
+[WindowPos_DESKTOP-VUDU6NE_2560_1440_1440_2560_4206278_-24_1440_2560]
+CompactMode=0
+MonitorCount=4
+Left=-554
+Top=1440
+Width=2303
+Height=1407
+Maximized=0
+SidebarVisible=0
+SidebarWidth=240
+
+[WindowPos_DESKTOP-VUDU6NE_2560_1440_1440_2560_1440_2560_4206268_-24]
+CompactMode=0
+MonitorCount=4
+Left=1201
+Top=1951
+Width=1454
+Height=1407
+Maximized=0
+SidebarVisible=0
+SidebarWidth=240
+
+[TopToolbarBtns]
+Btn0=Session
+Btn1=Games
+Btn2=Sessions
+Btn3=Settings
+Btn4=Exit
+
+[ImportExportSpecials]
+ExportedSettings=Home and Slash directories location|Local terminal settings|Global X server settings|SSH settings|Folders history|Services settings|MobaXterm interface settings|Sessions|Macros|Stored passwords and credentials|Sessions presets|SSH tunnels|MobaTextEditor and MobaDiff settings|Custom syntaxes|Shared sessions|Suppressed message dialogs
+mobauser@mobaserver=
+MobaVersion=23.5
+ExportDate=2024-02-20
+ExportTime=14:59:07
+ExportUsername=ry
+ExportComputer=DESKTOP-VUDU6NE
+
