@@ -137,10 +137,11 @@ export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
   # aliases 
 
   alias c='clear'
-  alias dc='docker compose'
+  alias dc='docker-compose'
 	alias dcu='docker compose up'
-	alias dcd='docker compose down --remove-orphans'
+	alias dcd='docker-compose down --remove-orphans'
 	alias ll='ls -lrt'
+	alias bridges='sshpass -p $(cat ~/.ssh/bridges-ssh.pass) ssh bridges'
 	
 	# tmux things 
 	alias tml='tmux ls'
@@ -163,3 +164,34 @@ export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
 
 	# aliases for CARC hpc
 	alias jobs='watch squeue --me'
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/ryserver/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/ryserver/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ryserver/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/ryserver/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+## Aliases for ISC24 Competition
+alias bridges='sshpass -p $(cat ~/.ssh/passwords/bridges-ssh.pass) ssh bridges'
+alias levante='sshpass -p $(cat ~/.ssh/passwords/levante-ssh.pass) ssh levante'
+## End ISC24
+
+[ -f "/home/ryserver/.ghcup/env" ] && . "/home/ryserver/.ghcup/env" # ghcup-env
+
+# initialize spack
+. ~/spack/share/spack/setup-env.sh
+
+## Add iterm2 support (run on remote host)
+# curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+##
+
