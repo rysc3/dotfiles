@@ -7,5 +7,5 @@
 !.gitignore
 !.tmux.conf
 !.vimrc
-!.iterm2-colors
+!.iterm2-colors/*
 
