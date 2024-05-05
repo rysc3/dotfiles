@@ -1,4 +1,5 @@
 # Ignore all files and directories
+*
 
 # Allow specific files
 !.ssh/id_rsa.pub
