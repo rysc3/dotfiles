@@ -132,6 +132,22 @@ function bash_prompt() {
 
 export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[1;37m\][\[\033[1;37m\]ser\[\033[1;37m\]]:\[\033[01;34m\]\w\[\033[00m\] \$(git_branch)\$ "
 
+# function to change brightness on mac
+brightness() {
+  if ! [[ $1 =~ ^[0-9]+$ ]]; then 
+    echo "Usage: $ brightness <input>"
+    return 1;
+  fi
+
+  max=$(cat /sys/class/backlight/gmux_backlight/max_brightness)
+  
+  if (( $1 < 0 || $1 > max )); then 
+    echo "Enter range from 0 to $max"
+    return 1;
+  fi
+
+  echo $1 | sudo tee /sys/class/backlight/gmux_backlight/brightness
+}
 
 # My custom things:
   # aliases 
@@ -164,6 +180,13 @@ export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
 
 	# aliases for CARC hpc
 	alias jobs='watch squeue --me'
+
+  ## Aliases for ISC24 Competition
+  alias bridges='sshpass -p $(cat ~/.ssh/passwords/bridges-ssh.pass) ssh bridges'
+  alias levante='sshpass -p $(cat ~/.ssh/passwords/levante-ssh.pass) ssh levante'
+  ## End ISC24
+
+
 # added by Anaconda3 2018.12 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -181,10 +204,7 @@ fi
 unset __conda_setup
 # <<< conda init <<<
 
-## Aliases for ISC24 Competition
-alias bridges='sshpass -p $(cat ~/.ssh/passwords/bridges-ssh.pass) ssh bridges'
-alias levante='sshpass -p $(cat ~/.ssh/passwords/levante-ssh.pass) ssh levante'
-## End ISC24
+
 
 [ -f "/home/ryserver/.ghcup/env" ] && . "/home/ryserver/.ghcup/env" # ghcup-env
 
@@ -194,4 +214,3 @@ alias levante='sshpass -p $(cat ~/.ssh/passwords/levante-ssh.pass) ssh levante'
 ## Add iterm2 support (run on remote host)
 # curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 ##
-
