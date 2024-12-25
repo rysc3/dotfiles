@@ -36,3 +36,5 @@ alias tma='tmux attach -t'
 alias python='python3'
 alias pip='pip3'
 alias activ='source ~/venv/bin/activate'
+alias condaa='source ~/miniconda3/bin/activate'
+
