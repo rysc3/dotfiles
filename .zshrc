@@ -21,3 +21,17 @@ RPROMPT='  '
 
 # Set java version to azul17 for cs351 and like everything else:
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home'
+
+# Tmux Aliases 
+alias tml='tmux ls'
+alias tma='tmux attach -t'
+
+
+[ -f "/Users/ry/.ghcup/env" ] && . "/Users/ry/.ghcup/env" # ghcup-env
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+alias dc='docker-compose'
+alias tml='tmux ls'
+alias tma='tmux attach -t'
+alias python='python3'
+alias pip='pip3'
